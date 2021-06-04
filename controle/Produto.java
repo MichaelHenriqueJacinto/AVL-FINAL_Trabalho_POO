@@ -8,6 +8,7 @@ public class Produto {
     private int qtd;
 
     public Produto(int codigo, String descricao, Double precoCusto, Double precoVenda, int qtd) {
+        super();
         this.codigo = codigo;
         this.descricao = descricao;
         this.precoCusto = precoCusto;
@@ -16,7 +17,7 @@ public class Produto {
     }
 
     public int getCodigo() {
-        return this.codigo;
+        return codigo;
     }
 
     public void setCodigo(int codigo) {
@@ -24,7 +25,7 @@ public class Produto {
     }
 
     public String getDescricao() {
-        return this.descricao;
+        return descricao;
     }
 
     public void setDescricao(String descricao) {
@@ -32,7 +33,7 @@ public class Produto {
     }
 
     public Double getPrecoCusto() {
-        return this.precoCusto;
+        return precoCusto;
     }
 
     public void setPrecoCusto(Double precoCusto) {
@@ -40,7 +41,7 @@ public class Produto {
     }
 
     public Double getPrecoVenda() {
-        return this.precoVenda;
+        return precoVenda;
     }
 
     public void setPrecoVenda(Double precoVenda) {
@@ -48,11 +49,12 @@ public class Produto {
     }
 
     public int getQtd() {
-        return this.qtd;
+        return qtd;
     }
 
     public void setQtd(int qtd) {
         this.qtd += qtd;
     }
-}
 
+
+}

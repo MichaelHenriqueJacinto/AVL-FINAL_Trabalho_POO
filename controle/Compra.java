@@ -12,39 +12,43 @@ public class Compra {
     private Double valorTotalCompra;
 
     public Compra(int codigo, Produto produto, int qtd, LocalDate data, LocalDateTime dataEHora) {
+        super();
         this.codigo = codigo;
         this.produto = produto;
         this.qtd = qtd;
         this.data = data;
         this.dataEHora = dataEHora;
-        this.setValorTotalCompra();
+        setValorTotalCompra();
     }
 
     public int getCodigo() {
-        return this.codigo;
+        return codigo;
     }
 
     public Produto getProduto() {
-        return this.produto;
+        return produto;
     }
 
     public int getQtd() {
-        return this.qtd;
+        return qtd;
     }
 
     public LocalDate getData() {
-        return this.data;
+        return data;
     }
 
+
     public LocalDateTime getDataEHora() {
-        return this.dataEHora;
+        return dataEHora;
     }
 
     public Double getValorTotalCompra() {
-        return this.valorTotalCompra;
+        return valorTotalCompra;
     }
 
     public void setValorTotalCompra() {
-        this.valorTotalCompra = (double)this.getQtd() * this.getProduto().getPrecoCusto();
+        this.valorTotalCompra = this.getQtd() * this.getProduto().getPrecoCusto();
     }
+
+
 }
